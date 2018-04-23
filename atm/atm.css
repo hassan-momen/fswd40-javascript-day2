@@ -1,0 +1,43 @@
+
+#atmwrapper{
+ 
+ width: 80vw;
+ height:  80vh;
+ margin:  auto;	
+ background-color: lightgrey;
+}
+
+#atmscreen{
+ background-color:  lightblue;
+ width:  70%;
+ height: 25%;
+ margin-left: auto;
+ margin-right: auto;
+ vertical-align: -20%;
+}
+
+#numpad{
+ background-color:  lightgreen;
+ margin: auto;
+ width:  50%;
+ height: 50%;
+}
+
+#numpad div{
+ width: 25%;
+ margin: 2%;
+ height: 16%;
+ background-color: orange;
+ text-align: center;
+ font-size: 2em;
+ float: left;	
+ border-radius: 9%;
+}
+
+.banknote{
+ float: left;
+ width: 10%;
+ height: 3em;
+ margin: 1em;
+}
+
