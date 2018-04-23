@@ -6,6 +6,11 @@ function timeconvert(minutes)
 }
 
 function yesterdaysDate(){
+ var d=new Date;
+ var now=d.getTime();
+ var yesterday=now-3600*1000*24;
+ var yesterdayDate=new Date(yesterday);
+ document.getElementById('yesterday').innerHTML=yesterdayDate;	
 
 }
 
