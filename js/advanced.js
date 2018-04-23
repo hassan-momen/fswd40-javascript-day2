@@ -5,12 +5,21 @@ function timeconvert(minutes)
  document.getElementById('timeconvert').innerHTML=result;
 }
 
-function yesterdaysDate(){
- var d=new Date;
+function yesterdaysDate(data){
+ var d=new Date(data);
  var now=d.getTime();
  var yesterday=now-3600*1000*24;
- var yesterdayDate=new Date(yesterday);
- document.getElementById('yesterday').innerHTML=yesterdayDate;	
+ var ydate=new Date(yesterday);
+ var year=ydate.getFullYear();
+ var month=ydate.getMonth();
+ var weekday=ydate.getDay();
+ var day=ydate.getDate();
+ var wday=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+ var mname=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+ var output=wday[weekday]+" "+mname[month]+" "+day+" "+year;
+
+ console.log(output);
+ document.getElementById('yesterday').innerHTML=output;	
 
 }
 
@@ -23,3 +32,4 @@ function dynamicBackground(){
  document.body.style.backgroundColor=bcolor;
  console.log("background "+bcolor);
 }
+
